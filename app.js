@@ -6,6 +6,7 @@ const filterOption = document.querySelector(".filter-todo");
 // ~? Selectors
 
 // ! event listener
+getTodos();
 todoBtn.addEventListener("click", addTodo);
 todoList.addEventListener("click", deletecheck);
 filterOption.addEventListener("click", filterTodo);
@@ -102,5 +103,30 @@ function localStorageRemoveItem(value) {
   } else {
     localStorage.setItem("localTodos", JSON.stringify(todos));
   }
+}
+function getTodos() {
+  let todos = localStorageCheck();
+  todos.forEach(function (todo) {
+    const newListDivision = document.createElement("div");
+    newListDivision.classList.add("todo-div");
+    const newListItem = document.createElement("li");
+    const itemDelBtn = document.createElement("button");
+    const itemCheckbox = document.createElement("button");
+    newListItem.classList.add("list-item");
+    newListItem.innerText = todo;
+    newListDivision.appendChild(newListItem);
+
+    // // create checkbox
+    itemCheckbox.classList.add("list-check-btn");
+    itemCheckbox.innerHTML = '<i class="fas fa-check"></i>';
+    newListDivision.appendChild(itemCheckbox);
+
+    // ? create close button
+    itemDelBtn.classList.add("list-del-btn");
+    itemDelBtn.innerHTML = '<i class="fas fa-trash"></i>';
+    newListDivision.appendChild(itemDelBtn);
+
+    todoList.appendChild(newListDivision);
+  });
 }
 // ~@ functions
