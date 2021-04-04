@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'New Tegomin', serif;
+  color: white;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(10, 10, 20, 0.9),
+      rgba(50, 50, 0, 0.8)
+    ),
+    url("../img/banner 1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
