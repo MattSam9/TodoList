@@ -136,3 +136,16 @@ body {
   -ms-border-radius: 0 1.2rem 1.2rem 0 !important;
   -o-border-radius: 0 1.2rem 1.2rem 0 !important;
 }
+.done {
+  text-decoration: line-through;
+  color: orange;
+  opacity: 0.5;
+}
+.fall{
+  transform: translateY(8rem) rotateZ(30deg);
+  -webkit-transform: translateY(8rem) rotateZ(30deg);
+  -moz-transform: translateY(8rem) rotateZ(30deg);
+  -ms-transform: translateY(8rem) rotateZ(30deg);
+  -o-transform: translateY(8rem) rotateZ(30deg);
+  opacity: 0;
+}
