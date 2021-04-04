@@ -78,3 +78,61 @@ body {
 .todo-button i {
   color: #fb8b1f;
 }
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.todo-list {
+  font-size: 1rem;
+  font-weight: bold;
+  list-style: none;
+}
+.todo-div {
+  min-width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.3rem;
+  padding: 0 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 1.2rem;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.fa-check, .fa-trash {
+  pointer-events: none;
+}
+.todo-list .todo-div li {
+  flex: 1;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.todo-list .todo-div button {
+  border: none;
+  border-radius: unset;
+  transform: translateX(1rem);
+  cursor: pointer;
+  padding: 0.6rem;
+  background-color: #f84e1c;
+  color: white;
+  -webkit-border-radius: unset;
+  -moz-border-radius: unset;
+  -ms-border-radius: unset;
+  -o-border-radius: unset;
+}
+ .list-check-btn{
+  background-color: #51d020 !important;
+} 
+.list-del-btn {
+  border-radius: 0 1.2rem 1.2rem 0 !important;
+  -webkit-border-radius: 0 1.2rem 1.2rem 0 !important;
+  -moz-border-radius: 0 1.2rem 1.2rem 0 !important;
+  -ms-border-radius: 0 1.2rem 1.2rem 0 !important;
+  -o-border-radius: 0 1.2rem 1.2rem 0 !important;
+}
