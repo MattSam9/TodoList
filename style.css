@@ -149,3 +149,43 @@ body {
   -o-transform: translateY(8rem) rotateZ(30deg);
   opacity: 0;
 }
+.select-div {
+  margin-left: 1rem;
+  position: relative;
+  overflow:hidden;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+.filter-todo {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  padding: 0.3rem 1rem 0.3rem 0.3rem;
+  cursor:pointer;
+}
+.select-div::after{
+  content: '\25bc';
+  padding: 0.3rem 0.4rem 0.4rem;
+  color:white;
+  background-color: #fb8b1f;
+  position:absolute;
+  top: 0;
+  right: 0;
+  pointer-events:none;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.select-div:hover::after{
+  color:#fb8b1f;
+  background-color: white;
+}
