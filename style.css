@@ -7,7 +7,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'New Tegomin', serif;
+  font-family: "New Tegomin", serif;
   color: white;
   min-height: 100vh;
   background-image: linear-gradient(
@@ -105,7 +105,7 @@ body {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
 }
-.fa-check, .fa-trash {
+.fas {
   pointer-events: none;
 }
 .todo-list .todo-div li {
@@ -126,9 +126,9 @@ body {
   -ms-border-radius: unset;
   -o-border-radius: unset;
 }
- .list-check-btn{
+.list-check-btn {
   background-color: #51d020 !important;
-} 
+}
 .list-del-btn {
   border-radius: 0 1.2rem 1.2rem 0 !important;
   -webkit-border-radius: 0 1.2rem 1.2rem 0 !important;
@@ -141,7 +141,7 @@ body {
   color: orange;
   opacity: 0.5;
 }
-.fall{
+.fall {
   transform: translateY(8rem) rotateZ(30deg);
   -webkit-transform: translateY(8rem) rotateZ(30deg);
   -moz-transform: translateY(8rem) rotateZ(30deg);
@@ -152,7 +152,7 @@ body {
 .select-div {
   margin-left: 1rem;
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
@@ -168,24 +168,24 @@ body {
   outline: none;
   font-size: 1.3rem;
   padding: 0.3rem 1rem 0.3rem 0.3rem;
-  cursor:pointer;
+  cursor: pointer;
 }
-.select-div::after{
-  content: '\25bc';
+.select-div::after {
+  content: "\25bc";
   padding: 0.3rem 0.4rem 0.4rem;
-  color:white;
+  color: white;
   background-color: #fb8b1f;
-  position:absolute;
+  position: absolute;
   top: 0;
   right: 0;
-  pointer-events:none;
+  pointer-events: none;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
 }
-.select-div:hover::after{
-  color:#fb8b1f;
+.select-div:hover::after {
+  color: #fb8b1f;
   background-color: white;
 }
